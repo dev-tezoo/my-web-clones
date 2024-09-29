@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: Poppins;
+}
+nav{
+    background-color: rgba(35, 35, 34, 0.811);
+    color: white;
+   
+    
+
+}
+
+
+
+
+nav ul li{
+    list-style: none;
+    font-size: 14px;
+    cursor: pointer;
+    
+
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    padding-top: 12px;
+    padding-bottom: 9px;
+    
+}
+nav ul li img{
+    width: 17px;
+    height: 17px;
+}
+header p{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    
+    
+}
+.main {
+    background-image: url("assests/background-main.png");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+    margin: 0;
+   
+}
+.hero{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+
+}
+.hero span:nth-child(1){
+    font-size: 60px;
+    font-weight: 600;
+}
+.hero span:nth-child(2){
+    font-size: 28px;
+    max-width: 477px;
+    margin-left: 503px;
+}
+.main .capsule{
+    background-color: white;
+    color: black;
+    width: 153px;
+    height: 40px;
+    margin-left: 670px;
+    margin-top: 25px;
+    padding: 13px 5px 0px 5px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.main .capsule:hover{
+    color: rgb(251, 247, 247);
+    background-color: black;
+}
+.main2 {
+    background-image: url("assests/background-main2.png");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.main2 .capsule{
+    border: 1px solid rgb(0, 128, 255);
+    width: 100px;
+    text-align: center;
+    margin-left: 690px;
+    border-radius: 40px;
+    color: black;
+    margin-top: 449px;
+    background-color: white;
+    padding: 13px 5px 13px 1px;
+    cursor: pointer;
+}
+.main2 .capsule:hover{
+    background-color:rgb(0, 128, 255) ;
+    color: white;
+}
+.main3 {
+    background-image: url("assests/iphone-faded.png");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.main3 .hero div:nth-child(1){
+    font-size: 50px;
+    margin-top: -45px;
+
+}
+.main3 .hero div:nth-child(2){
+    font-size:20px ;
+}
+ .faded{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 12px;
+ }
+ .faded .learnmore{
+    padding: 6px 9px 6px 9px;
+    border-radius: 40px;
+    background-color: rgb(0, 128, 255);
+    color: white;
+    font-size: 15px;
+    border-style: none;
+    cursor: pointer;
+ }
+ .faded .Buy{
+    padding: 2px 13px 0px 13px;
+    border-radius: 17px;
+    font-size: 20px;
+    border-style: none;
+    border: 1px solid rgb(0, 128, 255);
+    background-color: black;
+    color: white;
+    cursor: pointer;
+ }
+ .faded .Buy:hover{
+    background-color: rgb(0, 128, 255);
+    color: white;
+ }
+ .box1{
+   text-align: center;
+ }
+ .box2{
+    text-align: center;
+ }
+ .iphoneimage{
+    width: 400px;
+    height: 350px;
+ }
+ .macimage{
+    width: 500px;
+    height: 400px;
+ }
+ .main4{
+    display: flex;
+    margin-left: 190px;
+    margin-top: 25px;
+    gap: 190px;
+ }
+ .iphone div:nth-child(1){
+    font-size: 50px;
+ }
+ .iphone div:nth-child(2){
+    font-size: 25px;
+ }
+ .macbook div:nth-child(1){
+    font-size: 50px;
+ }
+ .macbook div:nth-child(2){
+    font-size: 25px;
+ }
+ .learnmoreiphone{
+    padding: 6px 9px 6px 9px;
+    border-radius: 40px;
+    background-color: rgb(0, 128, 255);
+    color: white;
+    font-size: 15px;
+    border-style: none;
+    cursor: pointer;
+ }
+  .Buy1{
+    padding: 2px 13px 0px 13px;
+    border-radius: 17px;
+    font-size: 20px;
+    border-style: none;
+    border: 1px solid rgb(0, 128, 255);
+    background-color: rgb(251, 249, 249);
+    color: rgb(13, 13, 13);
+    cursor: pointer;
+ }
+  .Buy1:hover{
+    background-color: rgb(0, 128, 255);
+    color: white;
+ }
+ .main5 p{
+    font-size: 10px;
+    margin: 14px 200px 0px 200px;
+ }
+ .grid{
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 40px 300px 0px 200px;
+    color: gray;
+ }
+ .grid li{
+    list-style: none;
+    
+ }
+ .grid li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+ }
+ .end p{
+    font-size: 12px;
+    margin-left: 200px;
+    margin-top: 40px;
+    color: gray;
+ }
+ footer{
+    display: flex;
+    gap: 210px;
+    font-size: 11px;
+    color: gray;
+    margin-left: 200px;
+   
+ }
+ .footerlist ul{
+    display: flex;
+    gap: 20px;
+    list-style: circle;
+    margin-left: -120px;
+   
+ }
+ .india{
+    margin-left: 125px;
+ }
+ .footerlist ul li{
+    cursor: pointer;
+ }
+ .footerlist ul li:hover{
+    text-decoration: underline;
+ }
