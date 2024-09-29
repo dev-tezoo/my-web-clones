@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    color: #fff;
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#cursor {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #bafd04;
+    position: fixed;
+    z-index: 99;
+}
+
+#cursor-blur {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: #bbff0016;
+    position: fixed;
+    filter: blur(50px);
+    z-index: 9;
+}
+
+#nav {
+    height: 140px;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0 145px;
+    gap: 45px;
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 99;
+
+}
+
+#nav img {
+    height: 75px;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+#main {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+
+}
+
+#page1 h1 {
+    font-size: 140px;
+    font-weight: 900;
+    position: relative;
+}
+
+#page1 h1::before {
+
+    content: "Eat. Drink. Play.";
+    position: absolute;
+    color: rgb(0, 0, 0);
+    top: -6px;
+    left: -6px;
+    -webkit-text-stroke: 2px greenyellow;
+    z-index: -1;
+}
+
+
+#page1 h2 {
+    font-size: 35px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#page1 p {
+    font-size: 12px;
+    font-weight: 500;
+    width: 40%;
+}
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+
+#scroller {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    z-index: 10;
+    margin-bottom: 90px;
+
+}
+
+#scroller::-webkit-scrollbar {
+    display: none;
+}
+
+#scroller-in {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+#scroller h4 {
+    display: inline-block;
+    font-size: 140px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    margin-right: 10px;
+    transition: all linear 0.5s;
+    color: transparent;
+    -webkit-text-stroke: 2px #95C11E;
+}
+
+#scroller h4:hover {
+    color: #95C11E;
+}
+
+@keyframes scroll {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+}
+
+#about-us {
+    height: 40vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;
+    display: flex;
+    position: relative;
+    z-index: 10;
+
+
+}
+
+#about-us-in {
+    align-items: center;
+    text-align: center;
+    width: 40%;
+}
+
+#about-us-in h4 {
+    font-size: 69px;
+    font-weight: 900;
+    margin-bottom: 40px;
+
+}
+
+#about-us-in p {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 40px;
+
+
+}
+
+#about-us img {
+    border-radius: 20px;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+
+}
+
+#cards-container {
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    /* background-color: rgb(0, 0, 0); */
+    justify-content: center;
+    gap: 80px;
+    position: relative;
+    z-index: 10;
+
+
+}
+
+.card {
+    height: 80%;
+    width: 50%;
+    /* background-color: #95C11E; */
+    margin: 0 30px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+}
+
+.card:hover {
+    transform: rotate3d(-1, 1, 0, 20deg);
+}
+
+#card1 {
+    background-image: url(assests/card-1img.png);
+}
+
+#card2 {
+    background-image: url(assests/card-2img.png);
+}
+
+#card3 {
+    background-image: url(assests/card-3img.png);
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #95C11E;
+    padding: 50px;
+    opacity: 0;
+    transition: all ease 0.6s;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h4 {
+    color: black;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.overlay p {
+    color: black;
+    font-weight: 400;
+}
+
+#green-div {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left bottom, #079D3C, #AEE223);
+
+}
+
+#green-div h4 {
+    text-transform: uppercase;
+    width: 45%;
+    font-size: 29px;
+    text-align: center;
+    line-height: 55px;
+    color: black;
+    font-weight: 900;
+
+}
+
+#green-div img {
+    height: 100%;
+    object-fit: cover;
+    width: 14%;
+}
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    position: relative;
+}
+
+#page3>p {
+    font-size: 40px;
+    font-weight: 900;
+    width: 55%;
+    line-height: 45px;
+    text-align: center;
+}
+
+#page3 img {
+    height: 40px;
+    position: absolute;
+}
+
+#page3 #colon1 {
+    left: 15%;
+    top: 25%;
+}
+#page3 #colon2 {
+    bottom: 30%;
+    right: 15%;
+}
+
+#page4{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+}
+
+.elem{
+    height: 70%;
+    width: 29%;
+    overflow: hidden;
+    position: relative;
+
+}
+.elem h2{
+    height: 100%;
+    width:100% ;
+    background-color: #95C11E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #000;
+    font-weight: 800;
+    border-radius: 30px;
+    position: absolute;
+    z-index: 10;
+    transition: all ease 0.5s;
+
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    
+}
+
+.elem:hover h2{
+    color: #fff;
+    background: transparent;
+}
+#page4 h1{
+    font-size: 80px;
+    position: absolute;
+    top: -3%;
+    font-weight: 900;
+    color: #000;
+    -webkit-text-stroke:2px #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
